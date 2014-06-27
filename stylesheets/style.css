@@ -1,0 +1,200 @@
+body {
+	background-image: url("../assets/stardust.png");
+  font-family: 'Cambo', serif;
+  text-align: center;
+  width: 100%;
+  height: 100em;
+}
+
+h1 {
+	font-size: 30px;
+	color: white;
+	position: relative;
+	top-margin: 20px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+h2 {
+	position: relative;
+	margin: 0 auto;
+	color: white;
+  font-size: 22px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+div {
+	margin 0 auto;
+	position: relative;
+	width: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.intro {
+	text-align: center;
+	margin: 40px 0px 40px 0px;
+}
+
+
+.main-image {
+	position: relative;
+	margin: 40px 0px 40px 0px auto;
+	border-radius: 190px;
+	border: 4px solid white;
+}
+
+.main-title {
+  margin-bottom: ;
+}
+
+.contentblock {
+	color: rgba(255,255,255,1);
+	background: rgba(255,255,255,.1);
+	-webkit-background: rgba(0,0,0, .1);
+  -moz-background: rgba(0,0,0, .1);
+	margin: 0 auto;
+	padding: 10px 20px 10px 20px;
+	line-height: 28px;
+	position: relative;
+	bottom: 0;
+	width: 75%;
+ 	text-align: left;
+ 	border-radius: 25px;
+ 	border: 4px solid white;
+}
+/*This styles my bio paragraphs and (I believe) allows them to move freely within those the .contentblock div*/
+.innerblock {
+	display: inline-block;
+/*This styles the content in my nav section at the bottom of the page*/
+}
+.navblock {
+  color: rgba(255,255,255,1);
+  background: rgba(255,255,255,.1);
+  -webkit-background: rgba(0,0,0, .1);
+  -moz-background: rgba(0,0,0, .1);
+  margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+  line-height: 28px;
+  position: relative;
+  bottom: 0;
+  width: 50%;
+  text-align: center;
+  border-radius: 15px;
+  border: 2px solid white;
+  margin-top: 40px;
+}
+/*This styles the hyperlinks in the nav section*/
+.navinfo {
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  word-spacing: 25px;
+}
+/*Style for the copyright info at the bottom of the page*/
+#footer {
+  color: gray;
+}
+/*custom style for the hyperlink in the bio paragraph*/
+#inlinelink {
+  text-decoration: underline;
+}
+/*style for the button in the bio paragraph. I got this from http://www.cssbuttongenerator.com*/
+.rpsbutton {
+  background-color:transparent;
+  -webkit-border-top-left-radius:6px;
+  -moz-border-radius-topleft:6px;
+  border-top-left-radius:6px;
+  -webkit-border-top-right-radius:6px;
+  -moz-border-radius-topright:6px;
+  border-top-right-radius:6px;
+  -webkit-border-bottom-right-radius:6px;
+  -moz-border-radius-bottomright:6px;
+  border-bottom-right-radius:6px;
+  -webkit-border-bottom-left-radius:6px;
+  -moz-border-radius-bottomleft:6px;;
+
+  text-indent:0  border:1px solid #dcdcdc;
+  border-bottom-left-radius:6px;
+  display:inline-block;
+  color:white;
+  font-family:Trebuchet MS;
+  font-size:15px;
+  font-weight:normal;
+  font-style:normal;
+  height:29px;
+  line-height:29px;
+  text-decoration:none;
+  text-align:center;
+}
+/*style for when the button is pressed. Also got this from http://www.cssbuttongenerator.com*/
+.rpsbutton:active {
+  position:relative;
+  top:1px;
+}
+/*This optimizes text for screens smaller than 600px in width*/
+@media (max-width: 600px) {
+  .mainimage {
+  position: relative;
+  margin: 20px 0px 20px 0px auto;
+  border-radius: 190px;
+  border: 2px solid white;
+  width: 100px;
+  }
+  .contentblock {
+  color: rgba(255,255,255,1);
+  background: rgba(255,255,255,.1);
+  -webkit-background: rgba(0,0,0, .1);
+  -moz-background: rgba(0,0,0, .1);
+  margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+  line-height: 28px;
+  position: relative;
+  bottom: 0;
+  width: 75%;
+  text-align: left;
+  border-radius: 25px;
+  border: 4px solid white;
+  }
+  .contactblock {
+  color: rgba(255,255,255,1);
+  background: rgba(255,255,255,.1);
+  -webkit-background: rgba(0,0,0, .1);
+  margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+  line-height: 28px;
+  position: relative;
+  display: inline-block;
+  bottom: 0;
+  width: 75%;
+  text-align: center;
+  border-radius: 15px;
+  border: 2px solid white;
+  margin-top: 40px;
+  }
+  h1 {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 14px;
+    margin: 10px 0 10px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 12px;
+  }
+}
