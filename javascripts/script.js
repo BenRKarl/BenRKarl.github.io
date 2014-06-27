@@ -24,6 +24,8 @@ $(function(){
     $('.portfolio').toggle(750);
   });
 
+
+
   // $('.main-image').click(function(){
   //   $(this).effect('bounce', {distance: 10, times: 1}, 300);
   // });
