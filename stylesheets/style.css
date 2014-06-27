@@ -31,13 +31,19 @@ li {
   list-style: none;
 }
 
-.navinfo span a {
+.navinfo span {
+  color: white;
+  text-decoration: none;
+}
+
+a {
   color: white;
   text-decoration: none;
 }
 
 .navinfo span:hover {
   font-size: 17px;
+  cursor: pointer;
 }
 
 .navinfo a:hover {
@@ -60,8 +66,9 @@ li {
   display: inline-block;
 	padding: 10px 20px 10px 20px;
 	position: relative;
-	width: 75%;
+	width: 65%;
  	text-align: left;
+  color: white;
 }
 /*This styles my bio paragraphs and (I believe) allows them to move freely within those the .contentblock div*/
 .innerblock {
@@ -109,19 +116,13 @@ li {
   width: 100px;
   }
   .contentblock {
-  color: rgba(255,255,255,1);
-  background: rgba(255,255,255,.1);
-  -webkit-background: rgba(0,0,0, .1);
-  -moz-background: rgba(0,0,0, .1);
-  margin: 0 auto;
+  display: inline-block;
   padding: 10px 20px 10px 20px;
   line-height: 28px;
   position: relative;
   bottom: 0;
   width: 75%;
   text-align: left;
-  border-radius: 25px;
-  border: 4px solid white;
   }
   .contactblock {
   color: rgba(255,255,255,1);

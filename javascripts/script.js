@@ -6,8 +6,20 @@ $(function(){
 
   //hidden elements
   $('.resume').hide();
-  $('.projects').hide();
+  $('.portfolio').hide();
   $('.contact').hide();
+
+  $('.contact-link').click(function(e){
+    $('.contact').toggle(750);
+  });
+
+  $('.resume-link').click(function(e){
+    $('.resume').toggle(750);
+  });
+
+  $('.portfolio-link').click(function(e){
+    $('.portfolio').toggle(750);
+  });
 
   // $('.main-image').click(function(){
   //   $(this).effect('bounce', {distance: 10, times: 1}, 300);
