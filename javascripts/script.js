@@ -1,7 +1,18 @@
 $(function(){
+  //Initial fade-in elements
   $('.main-image').css({'opacity':0}).animate({'opacity':1}, 1000);
   $('.main-title').css({'opacity':0}).animate({'opacity':1}, 3000);
   $('.navblock').css({'opacity':0}).animate({'opacity':1}, 5000);
+
+  //hidden elements
+  $('.resume').hide();
+  $('.projects').hide();
+  $('.contact').hide();
+
+  // $('.main-image').click(function(){
+  //   $(this).effect('bounce', {distance: 10, times: 1}, 300);
+  // });
+
 })
 
 
