@@ -10,14 +10,17 @@ $(function(){
   $('.contact').hide();
 
   $('.contact-link').click(function(e){
+    $('.contentblock').children().hide(500);
     $('.contact').toggle(750);
   });
 
   $('.resume-link').click(function(e){
+    $('.contentblock').children().hide(500);
     $('.resume').toggle(750);
   });
 
   $('.portfolio-link').click(function(e){
+    $('.contentblock').children().hide(500);
     $('.portfolio').toggle(750);
   });
 
