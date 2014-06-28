@@ -30,21 +30,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-.content {
-  padding: 20px;
-  background: rgba(0,0,0,.3);
-  -webkit-background: rgba(0,0,0, .1);
-  -moz-background: rgba(0,0,0, .1);
-  border-radius: 15px;
-}
-
-.contentblock img {
-}
-
 .main-image {
   margin: 40px 0px 40px 0px;
   border-radius: 50%;
@@ -86,6 +71,21 @@ a:hover {
   cursor: pointer;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 20px;
+  background: rgba(0,0,0,.3);
+  -webkit-background: rgba(0,0,0, .1);
+  -moz-background: rgba(0,0,0, .1);
+  border-radius: 15px;
+}
+
+.contentblock img {
+}
+
 .contact a{
   margin: 5px;
   color: white;
@@ -113,48 +113,23 @@ a:hover {
   width: 100%;
 }
 
-/*Style for the copyright info at the bottom of the page*/
 #footer {
   color: gray;
-}
-/*custom style for the hyperlink in the bio paragraph*/
-#inlinelink {
-  text-decoration: underline;
 }
 
 /*This optimizes text for screens smaller than 600px in width*/
 @media (max-width: 600px) {
   .mainimage {
-  position: relative;
-  margin: 20px 0px 20px 0px auto;
   border-radius: 190px;
   border: 2px solid white;
   width: 100px;
   }
   .contentblock {
   display: inline-block;
-  padding: 10px 20px 10px 20px;
-  line-height: 28px;
   position: relative;
-  bottom: 0;
-  width: 75%;
+  width: 100%;
   text-align: left;
-  }
-  .contactblock {
-  color: rgba(255,255,255,1);
-  background: rgba(255,255,255,.1);
-  -webkit-background: rgba(0,0,0, .1);
-  margin: 0 auto;
-  padding: 10px 20px 10px 20px;
-  line-height: 28px;
-  position: relative;
-  display: inline-block;
-  bottom: 0;
-  width: 75%;
-  text-align: center;
-  border-radius: 15px;
-  border: 2px solid white;
-  margin-top: 40px;
+  color: white;
   }
   h1 {
     font-size: 22px;
