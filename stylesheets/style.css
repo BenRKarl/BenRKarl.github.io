@@ -4,7 +4,6 @@ body {
   text-align: center;
   width: 100%;
 }
-
 h1 {
 	font-size: 30px;
 	color: white;
@@ -12,7 +11,6 @@ h1 {
 	top-margin: 20px;
   font-family: 'Press Start 2P', cursive;
 }
-
 h2 {
 	position: relative;
 	margin: 0 auto;
@@ -20,16 +18,13 @@ h2 {
   font-size: 22px;
   font-family: 'Press Start 2P', cursive;
 }
-
 li {
   list-style: none;
 }
-
 a {
   color: lightgray;
   text-decoration: none;
 }
-
 .main-image {
   margin: 40px 0px 40px 0px;
   border-radius: 50%;
@@ -37,11 +32,9 @@ a {
   border: 4px solid white;
   box-shadow: 10px 10px 50px black;
 }
-
 .main-title {
   margin-bottom: 40px;
 }
-
 .navblock {
   color: rgba(255,255,255,1);
   background: rgba(255,255,255,.1);
@@ -58,32 +51,32 @@ a {
   border-radius: 15px;
   border: 2px solid white;
 }
-
 .navblock span{
   margin: 0 10px;
   color: white;
   text-decoration: none;
   font-size: 18px;
 }
-
 .navblock span:hover {
   font-size: 19px;
   cursor: pointer;
 }
-
 a:hover {
   text-decoration: underline;
 }
-
 .content {
   padding: 20px;
   background: rgba(0,0,0,.3);
   -webkit-background: rgba(0,0,0, .1);
   -moz-background: rgba(0,0,0, .1);
   border-radius: 15px;
+  font-family: 'Lato', sans-serif;
+}
+.contentblock img {
 }
 
-.contentblock img {
+.contact {
+  font-size: 18px;
 }
 
 .contact a{
@@ -91,11 +84,9 @@ a:hover {
   color: white;
   text-decoration: none;
 }
-
 .contact a:hover {
   font-size: 17px;
 }
-
 .contentblock {
   display: inline-block;
 	position: relative;
@@ -103,20 +94,22 @@ a:hover {
  	text-align: left;
   color: white;
 }
-
+.resume-icon {
+  width: 20px;
+}
 .portfolio-image-container {
   text-align: center;
   width: inherit;
 }
-
 .portfolio-image-container img {
   width: 100%;
 }
-
 #footer {
   color: gray;
 }
 
+
+/*Styles for screens smaller than 700px width*/
 @media all and (max-width: 700px) {
   .mainimage {
   border-radius: 50%;
