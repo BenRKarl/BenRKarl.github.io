@@ -118,7 +118,7 @@ a:hover {
 }
 
 /*This optimizes text for screens smaller than 600px in width*/
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .mainimage {
   border-radius: 190px;
   border: 2px solid white;
