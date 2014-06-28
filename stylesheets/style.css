@@ -21,33 +21,28 @@ h2 {
   font-family: 'Press Start 2P', cursive;
 }
 
-div {
-	margin 0 auto;
-	position: relative;
-	width: auto;
-}
-
 li {
   list-style: none;
 }
 
-.navinfo span {
-  color: white;
-  text-decoration: none;
-}
-
 a {
-  color: white;
+  color: lightgray;
   text-decoration: none;
 }
 
-.navinfo span:hover {
-  font-size: 17px;
-  cursor: pointer;
+a:hover {
+  text-decoration: underline;
 }
 
-.navinfo a:hover {
-  font-size: 17px;
+.content {
+  padding: 20px;
+  background: rgba(0,0,0,.3);
+  -webkit-background: rgba(0,0,0, .1);
+  -moz-background: rgba(0,0,0, .1);
+  border-radius: 15px;
+}
+
+.contentblock img {
 }
 
 .main-image {
@@ -62,41 +57,62 @@ a {
   margin-bottom: 40px;
 }
 
-.contentblock {
-  display: inline-block;
-	padding: 10px 20px 10px 20px;
-	position: relative;
-	width: 65%;
- 	text-align: left;
-  color: white;
-}
-/*This styles my bio paragraphs and (I believe) allows them to move freely within those the .contentblock div*/
-.innerblock {
-	display: inline-block;
-/*This styles the content in my nav section at the bottom of the page*/
-}
 .navblock {
   color: rgba(255,255,255,1);
   background: rgba(255,255,255,.1);
   -webkit-background: rgba(0,0,0, .1);
   -moz-background: rgba(0,0,0, .1);
   margin: 0 auto;
+  margin-bottom: 40px;
   padding: 10px 20px 10px 20px;
   line-height: 28px;
   position: relative;
   bottom: 0;
-  width: 50%;
+  display: inline-block;
   text-align: center;
   border-radius: 15px;
   border: 2px solid white;
-  margin-top: 40px;
 }
-/*This styles the hyperlinks in the nav section*/
-.navinfo {
+
+.navblock span{
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navblock span:hover {
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.contact a{
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  font-size: 17px;
+}
+
+.contentblock {
   display: inline-block;
-  padding: 0px 20px 0px 20px;
-  word-spacing: 25px;
+	position: relative;
+	width: 75%;
+ 	text-align: left;
+  color: white;
 }
+
+.portfolio-image-container {
+  text-align: center;
+  width: inherit;
+}
+
+.portfolio-image-container img {
+  width: 100%;
+}
+
 /*Style for the copyright info at the bottom of the page*/
 #footer {
   color: gray;
