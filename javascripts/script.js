@@ -10,18 +10,30 @@ $(function(){
   $('.contact').hide();
 
   $('.contact-link').click(function(e){
-    $('.contentblock').children().hide(500);
-    $('.contact').toggle(750);
+    if ($('.contact').is(':visible')){
+      $('.contact').toggle(750);
+    } else {
+      $('.contentblock').children().hide(500);
+      $('.contact').toggle(750);
+    }
   });
 
   $('.resume-link').click(function(e){
-    $('.contentblock').children().hide(500);
-    $('.resume').toggle(750);
+    if ($('.resume').is(':visible')){
+      $('.resume').toggle(750);
+    } else {
+      $('.contentblock').children().hide(500);
+      $('.resume').toggle(750);
+    }
   });
 
   $('.portfolio-link').click(function(e){
-    $('.contentblock').children().hide(500);
-    $('.portfolio').toggle(750);
+    if ($('.portfolio').is(':visible')){
+      $('.portfolio').toggle(750);
+    } else {
+      $('.contentblock').children().hide(500);
+      $('.portfolio').toggle(750);
+    }
   });
 
   $('.main-image').draggable();
