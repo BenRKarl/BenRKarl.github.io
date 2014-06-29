@@ -1,19 +1,14 @@
 body {
 	background-image: url("../assets/stardust.png");
-  font-family: 'Cambo', serif;
   text-align: center;
   width: 100%;
 }
 h1 {
-	font-size: 30px;
+  font-size: 30px;
 	color: white;
-	position: relative;
-	top-margin: 20px;
   font-family: 'Press Start 2P', cursive;
 }
 h2 {
-	position: relative;
-	margin: 0 auto;
 	color: white;
   font-size: 22px;
   font-family: 'Press Start 2P', cursive;
@@ -25,6 +20,7 @@ a {
   color: #62B1F6;
   text-decoration: none;
 }
+
 .main-image {
   margin: 40px 0px 40px 0px;
   border-radius: 50%;
@@ -35,31 +31,38 @@ a {
 .main-title {
   margin-bottom: 40px;
 }
+
 .navblock {
+  font-family: 'Cambo', serif;
   color: rgba(255,255,255,1);
   background: rgba(255,255,255,.1);
   -webkit-background: rgba(0,0,0, .1);
   -moz-background: rgba(0,0,0, .1);
   margin: 0 auto;
   margin-bottom: 40px;
-  padding: 10px 20px 10px 20px;
-  line-height: 28px;
-  position: relative;
-  bottom: 0;
-  display: inline-block;
+  padding: 0;
+  width: 400px;
   text-align: center;
   border-radius: 15px;
   border: 2px solid white;
 }
 .navblock span{
-  margin: 0 10px;
+  display: inline-block;
   color: white;
-  text-decoration: none;
   font-size: 18px;
+  margin: 10px;
 }
 .navblock span:hover {
+  margin: 9px;
   font-size: 19px;
   cursor: pointer;
+}
+
+.contentblock {
+  display: inline-block;
+  width: 75%;
+  text-align: left;
+  color: white;
 }
 
 .content {
@@ -71,30 +74,15 @@ a {
   font-family: 'Lato', sans-serif;
 }
 
-.contact {
-  font-size: 18px;
+/*Resume Section*/
+.resume-icon {
+  width: 20px;
 }
 .code {
   color: #DD3131;
 }
-.contact a{
-  color: #62B1F6;
-  margin: 5px;
-  text-decoration: none;
-}
-.contact a:hover {
-  font-size: 19px;
-}
-.contentblock {
-  display: inline-block;
-	position: relative;
-	width: 75%;
- 	text-align: left;
-  color: white;
-}
-.resume-icon {
-  width: 20px;
-}
+
+/*Portfolio Section*/
 .portfolio-image-container {
   margin: 0 auto;
   width: 85%;
@@ -102,6 +90,22 @@ a {
 .portfolio-image-container img {
   width: 100%;
 }
+
+/*Contact Section*/
+.contact {
+  font-size: 18px;
+}
+.contact a{
+  display:inline-block;
+  color: #62B1F6;
+  margin: 5px;
+  text-decoration: none;
+}
+.contact a:hover {
+  font-size: 19px;
+  margin-top: 4px;
+}
+
 #footer {
   color: gray;
 }
