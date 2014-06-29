@@ -74,7 +74,9 @@ a {
 .contact {
   font-size: 18px;
 }
-
+.code {
+  color: #DD3131;
+}
 .contact a{
   color: #62B1F6;
   margin: 5px;
