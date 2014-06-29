@@ -70,8 +70,6 @@ a {
   border-radius: 15px;
   font-family: 'Lato', sans-serif;
 }
-.contentblock img {
-}
 
 .contact {
   font-size: 18px;
@@ -96,8 +94,8 @@ a {
   width: 20px;
 }
 .portfolio-image-container {
-  text-align: center;
-  width: inherit;
+  margin: 0 auto;
+  width: 85%;
 }
 .portfolio-image-container img {
   width: 100%;
