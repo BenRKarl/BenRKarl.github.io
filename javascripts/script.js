@@ -10,6 +10,19 @@ $(function(){
   $('.resume').hide();
   $('.portfolio').hide();
   $('.contact').hide();
+  $('.about-me').hide();
+
+    $('.about-me-link').click(function(e){
+    if ($('.about-me').is(':visible')){
+      $('.about-me').toggle(750);
+    } else {
+      $('.contentblock').children().hide(500);
+      $('.about-me').toggle(750);
+    }
+    $('html, body').animate({
+      scrollTop: $('.contentblock').offset().top
+    }, 750);
+  });
 
   $('.resume-link').click(function(e){
     if ($('.resume').is(':visible')){

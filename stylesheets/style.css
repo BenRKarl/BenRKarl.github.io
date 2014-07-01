@@ -83,6 +83,9 @@ a {
 }
 
 /*Portfolio Section*/
+.portfolio {
+  font-size: 22px;
+}
 .portfolio-image-container {
   margin: 0 auto;
   width: 85%;
