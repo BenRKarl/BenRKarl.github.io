@@ -20,6 +20,11 @@ a {
   color: #62B1F6;
   text-decoration: none;
 }
+embed {
+  margin: 0 auto;
+  width: 850px;
+  height: 1100px;
+}
 
 .main-image {
   margin: 40px 0px 0px 0px;
@@ -80,6 +85,9 @@ a {
 }
 .code {
   color: #FB861A;
+}
+.resume-content {
+
 }
 
 /*Portfolio Section*/
