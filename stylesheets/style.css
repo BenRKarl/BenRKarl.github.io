@@ -21,9 +21,9 @@ a {
   text-decoration: none;
 }
 embed {
-  margin: 0 auto;
-  width: 850px;
-  height: 1100px;
+  display: inline-block;
+  width: 845px;
+  height: 1075px;
 }
 
 .main-image {
@@ -86,8 +86,8 @@ embed {
 .code {
   color: #FB861A;
 }
-.resume-content {
-
+.resume.content {
+  text-align: center;
 }
 
 /*Portfolio Section*/
