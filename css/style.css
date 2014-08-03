@@ -99,6 +99,15 @@ a {
 .portfolio {
   font-size: 22px;
 }
+.thumbnail-container {
+  text-align: left;
+}
+.thumbnail {
+  display: inline-block;
+}
+.thumbnail img {
+  max-height: 260px;
+}
 .portfolio-element {
   /*width: 75%;
   display: inline-block;*/
