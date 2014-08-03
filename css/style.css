@@ -104,9 +104,11 @@ a {
 }
 .thumbnail {
   display: inline-block;
+  margin: 10px;
+  box-shadow: 2px 2px 20px gray;
 }
 .thumbnail img {
-  max-height: 260px;
+  max-height: 230px;
 }
 .portfolio-element {
   /*width: 75%;
