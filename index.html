@@ -26,10 +26,10 @@
 </div>
 
 <div class="navblock">
-		<span class="about-me-link">About Me</span>
-		<span class="resume-link">Resume</span>
-		<span class="portfolio-link">Portfolio</span>
-		<span class="contact-link">Contact</span>
+		<span class="about-me-link" data="about">About Me</span>
+		<span class="resume-link" data="resume">Resume</span>
+		<span class="portfolio-link" data="portfolio">Portfolio</span>
+		<span class="contact-link" data="contact">Contact</span>
 </div></br>
 
 <div class="contentblock">
@@ -46,10 +46,8 @@
 	</div>
 
 	<div class="resume content">
-		<div class="sizer">
-			<p>Please feel free to <a href="assets/Ben-Karl_Resume.pdf" download>download a copy</a> of my resume as a pdf. For questions or references check out my contact page and drop me a line!</p>
-			<img src="assets/Ben-Karl_Resume.png" class="resume-img">
-		</div>
+			<div class="resume-header"><p><a href="assets/Ben-Karl_Resume.pdf" download>Download PDF</a></p></div>
+			<img src="assets/Ben-Karl_Resume.png">
 	</div>
 
 	<div class="portfolio content">
@@ -66,6 +64,9 @@
 			</div>
 			<a href="https://github.com/BenRKarl/Look_Up">View Source Code</a>
 		</div>
+
+		<hr>
+
 		<div class="portfolio-element">
 			<h3>
 				<a href="http://coverage-reportr.herokuapp.com/">Coverage Reportr</a>
@@ -77,7 +78,6 @@
 				<img src="https://camo.githubusercontent.com/624e7a6ba64800380b21fd4d0e9db0ca05b335ca/687474703a2f2f692e696d6775722e636f6d2f4e414863784b452e706e67">
 				<p>After entering a URL, Coverage Reportr uses two APIs (<a href="http://www.alchemyapi.com/">AlchemyAPI</a> and <a href="http://nokogiri.org/">Nokogiri</a>) to parse the article for key metadata including the author's name, title, and - most importantly - the tone of the language.</p>
 			</div>
-
 			<div class="portfolio-image-container">
 				<img src="https://camo.githubusercontent.com/cc49070e64625860a87a7765e90029edbce9e426/687474703a2f2f692e696d6775722e636f6d2f4d5046564856372e706e67">
 				<p>You can see here the article has been entered to an online coverage report that you can share with other users and export into .csv.</p>
