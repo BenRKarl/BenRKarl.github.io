@@ -1,0 +1,12 @@
+# Site settings
+title: Ben Karl's Website
+email: benkarl@me.com
+description: "Ben Karl's personal website."
+baseurl: ""
+url: "benrkarl.com"
+twitter_username: BenRKarl
+github_username:  BenRKarl
+
+# Build settings
+markdown: kramdown
+permalink: pretty

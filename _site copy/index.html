@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+<link rel="shortcut icon" href="assets/ghost.ico">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="javascripts/script.js" type="text/javascript"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Cambo' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> <!-- 'Lora', serif; -->
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> <!-- 'Lato', sans-serif; -->
+<link href='https://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet' type='text/css'> <!-- 'Flamenco', cursive; -->
+<title>Ben Karl's Website</title>
+</head>
+
+<body>
+
+<img class="main-image" src="assets/Ben_GA_2.jpg">
+
+<div class="main-title">
+<h1>Ben Karl</h1>
+<h2>Full Stack Web Development</h2>
+</div>
+
+<div class="navblock">
+		<span class="about-me-link">About Me</span>
+		<span class="resume-link">Resume</span>
+		<span class="portfolio-link">Portfolio</span>
+		<span class="contact-link">Contact</span>
+</div></br>
+
+<div class="contentblock">
+
+	<div class="about-me content">
+			<p><h3 style="text-decoration:underline;">About Me: </h3>
+			My engineering adventure started many years ago... </p>
+
+			<p>I've been comfortably adept with technology my entire life, starting somewhere around the age of thirteen when I built my first PC to play Half-Life: Counter Strike, (a game I later studied for a graduate-level research project). In college I studied mathematics to stay close to computer science while focusing my time on athletics. I later transitioned to Interdisciplinary Studies in order to study technology from a more sociological perspective. In 2011 and 2012 I managed the development of several interactive proof-of-concept prototypes to demonstrate PayPal's new mobile payment applications to business and technology reporters.</p>
+
+			<p>In 2014, inspired by my experience working with PayPal's engineering team, I decided to pursue my passion for technology and building things full time. Since then I've graduated from General Assembly's <a href="https://generalassemb.ly/education/web-development-immersive">Web Development Immersive</a> program, where I continue to work day-in and day-out to learn everything I can about how to build web applications. My time with GA has provided me with extensive exposure to <span class="code">Ruby</span> and <span class="code">JavaScript</span>, frameworks like <span class="code">Rails</span> and <span class="code">Sinatra</span>, testing suites like <span class="code">rSpec</span>, <span class="code">MiniTest</span> and <span class="code">Jasmine</span>, as well as other tools like<span class="code">jQuery</span>, <span class="code">jQuery UI</span>, <span class="code">Backbone.js</span>, <span class="code">Node.js</span>, <span class="code">Express</span>, <span class="code">MongoDB</span>, and more.</p>
+
+			<p>I'm extremely enthusiastic about technology and I love pouring my heart into projects that make a difference in people's lives. I think that you would love working with me, so please reach out if you have any questions, comments, or if you just want a little fantasy football advice.</p>
+	</div>
+
+	<div class="resume content">
+		<div class="sizer">
+			<p>Please feel free to <a href="assets/Ben-Karl_Resume.pdf" download>download a copy</a> of my resume as a pdf. For questions or references check out my contact page and drop me a line!</p>
+			<img src="assets/Ben-Karl_Resume.png" class="resume-img">
+		</div>
+	</div>
+
+	<div class="portfolio content">
+		<div class="portfolio-element">
+			<h3>
+				<a href="http://afternoon-coast-5294.herokuapp.com/">Look Up!</a>
+			</h3>
+			<p>
+				Look Up is a visual representation of the positions of the planets in the solar system relative to the surface of the Earth. The app pulls user information from their browser, renders their latitude and longitude as the blue dot on the globe, then sends the information to the Astronomy API to get data about the planets, which is rendered on the globe. This app uses Rails as a server proxy for the Astronomy API, Backbone.js to organize the planetary data on the client-side, and D3.js to render the visualization.
+			</p>
+			<div class="portfolio-image-container">
+				<img src="http://i.imgur.com/cnRpt0s.png">
+				<p>Wondering if Saturn is visible right now? Just "Look Up!"</p>
+			</div>
+		</div>
+		<div class="portfolio-element">
+			<h3>
+				<a href="http://coverage-reportr.herokuapp.com/">Coverage Reportr</a>
+			</h3>
+			<p>
+				Coverage Reportr is an application designed to make coverage reporting easier for the Public Relations industry. Historically compiling and organizing a coverage report required lots of time and lots of Excel, but now you can do your coverage reports quickly and easily with Coverage Reportr!
+			</p>
+			<div class="portfolio-image-container">
+				<img src="https://camo.githubusercontent.com/624e7a6ba64800380b21fd4d0e9db0ca05b335ca/687474703a2f2f692e696d6775722e636f6d2f4e414863784b452e706e67">
+				<p>After entering a URL, Coverage Reportr uses two APIs (<a href="http://www.alchemyapi.com/">AlchemyAPI</a> and <a href="http://nokogiri.org/">Nokogiri</a>) to parse the article for key metadata including the author's name, title, and - most importantly - the tone of the language.</p>
+			</div>
+
+			<div class="portfolio-image-container">
+				<img src="https://camo.githubusercontent.com/cc49070e64625860a87a7765e90029edbce9e426/687474703a2f2f692e696d6775722e636f6d2f4d5046564856372e706e67">
+				<p>You can see here the article has been entered to an online coverage report that you can share with other users and export into .csv.</p>
+			</div>
+			<a href="https://github.com/BenRKarl/coverage_reportr">View Source Code</a>
+		</div>
+
+		<hr>
+
+		<div class="portfolio-element">
+		<h3>
+			<a href="http://wdi-job-board.herokuapp.com/">Job Board</a>
+		</h3>
+		<p>
+			At General Assembly there's a job board prominently displayed in the lobby of both of the main offices where students, alumni and friends can share notes about opportunities they are seeking or offering. It's very analog, so my team decided to put it online and give it a few additional features to help connect people more easily.
+		</p>
+		<div class="portfolio-image-container">
+			<img src="https://camo.githubusercontent.com/25e77d84800b2d5a05724a215f0a273c784b589b/687474703a2f2f692e696d6775722e636f6d2f366830476939502e706e67">
+			<p>Here's the main job board, styled to look exactly as it appears in real life. Users can create an account with their LinkedIn account or their email address. The cards can be dragged and dropped anywhere on the board with the use of <a href="http://jqueryui.com/">jQuery UI</a> and we use Ajax to save the position of the card to the database. If someone 'Likes' your card you'll recieve a notification in your profile.</p>
+			</div>
+			<a href="https://github.com/mntj/JobBoard">View Source Code</a>
+		</div>
+	</div>
+
+	<div class="contact content">
+		Email me: <a href="mailto:benkarl@me.com">BenKarl@me.com</a></br>
+		Call me: 719-660-0519</br>
+		<a href="https://github.com/BenRKarl"><i class="fa fa-github-square fa-2x"></i></a>
+		<a href="https://www.facebook.com/BenjaminKarl"><i class="fa fa-facebook-square fa-2x"></i></a>
+		<a href="https://twitter.com/benkarl"><i class="fa fa-twitter-square fa-2x"></i></a>
+		<a href="https://www.linkedin.com/in/benkarl"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	</div>
+
+</div>
+
+<p id="footer">Copyright 2014 Ben Karl</p>
+</body>
+</html>
