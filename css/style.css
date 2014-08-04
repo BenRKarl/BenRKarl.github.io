@@ -53,7 +53,9 @@ a {
   font-size: 19px;
   cursor: pointer;
 }
-
+.code {
+  color: #FB861A;
+}
 
 .contentblock {
   text-align: center;
@@ -90,14 +92,14 @@ a {
   margin-left: 40px;
   font-size: 26px;
 }
-.code {
-  color: #FB861A;
-}
 
 
 /*Portfolio Section*/
 .portfolio {
   font-size: 22px;
+}
+.portfolio-header {
+  margin: 10px;
 }
 .thumbnail-container {
   text-align: left;
@@ -105,31 +107,24 @@ a {
 .thumbnail {
   display: inline-block;
   margin: 10px;
-  box-shadow: 2px 2px 20px gray;
 }
 .thumbnail img {
   max-height: 230px;
 }
+.job-board {
+  margin-left: 70px;
+}
+.info-container {
+  width: 34em;
+}
 .portfolio-element {
-  /*width: 75%;
-  display: inline-block;*/
-  text-align: left
-}
-.portfolio-image-container {
-  text-align: center;
-  margin: 0 auto;
-  width: 85%;
-}
-.portfolio-image-container img {
-  max-height: 400px;
-  max-width: 90%;
-  box-shadow: 10px 10px 50px black;
+  text-align: left;
 }
 
 /*Contact Section*/
 .contact {
   font-size: 18px;
-  text-align: left;
+  text-align: center;
 }
 .contact a{
   display:inline-block;

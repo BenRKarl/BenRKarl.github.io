@@ -34,6 +34,7 @@
 
 <div class="contentblock">
 
+	<!-- ABOUT ME -->
 	<div class="about-me content">
 			<p><h3 style="text-decoration:underline;">About Me: </h3>
 			My engineering adventure started many years ago... </p>
@@ -45,86 +46,83 @@
 			<p>I'm extremely enthusiastic about technology and I love pouring my heart into projects that make a difference in people's lives. I think that you would love working with me, so please reach out if you have any questions, comments, or if you just want a little fantasy football advice.</p>
 	</div>
 
+	<!-- RESUME -->
 	<div class="resume content">
 			<div class="resume-header"><p><a href="assets/Ben-Karl_Resume.pdf" download>Download PDF</a></p></div>
 			<img src="assets/Ben-Karl_Resume.png">
 	</div>
 
+
+	<!-- PORTFOLIO -->
 	<div class="portfolio content">
 		<div class="thumbnail-container">
-
-			<div class="thumbnail look-up">
+			<div class="portfolio-header">
+				Click an Image for More Info.
+			</div>
+			<div class="thumbnail look-up" data="look-up">
 				<img src="assets/look_up.gif">
 			</div>
-
-			<div class="thumbnail job-board">
+			<div class="thumbnail job-board" data="job-board">
 				<img src="assets/job_board.png">
 			</div></br>
-
-			<div class="thumbnail coverage">
+			<div class="thumbnail coverage" data="coverage">
 				<img src="assets/coverage_reporter.png">
 			</div>
-
-			<div class="thumbnail proto">
+			<div class="thumbnail proto" data="proto">
 				<img src="assets/class_proto.png">
 			</div>
-
-
-		</div>
-		<!-- <div class="portfolio-element">
-			<h3>
-				<a href="http://afternoon-coast-5294.herokuapp.com/">Look Up!</a>
-			</h3>
-			<p>
-				Look Up is a visual representation of the positions of the planets in the solar system relative to the surface of the Earth. The app pulls user information from their browser, renders their latitude and longitude as the blue dot on the globe, then sends the information to the Astronomy API to get data about the planets, which is rendered on the globe. This app uses Rails as a server proxy for the Astronomy API, Backbone.js to organize the planetary data on the client-side, and D3.js to render the visualization.
-			</p>
-			<div class="portfolio-image-container">
-				<img src="assets/look_up.gif">
-				<p>Wondering if Saturn is visible right now? Just "Look Up!"</p>
-			</div>
-			<a href="https://github.com/BenRKarl/Look_Up">View Source Code</a>
 		</div>
 
-		<hr>
+		<div class="info-container">
+			<div class="portfolio-element" id="look-up">
+				<p>
+					<a href="http://afternoon-coast-5294.herokuapp.com/">Look Up!</a> shows you where the other planets in the solar system are relative to your geographical position. I pulls information from the browser and renders relative information about the planets so you can see which of the planets are currently visible to you.
+				</p>
+				<p>
+					This app uses <span class="code">Rails</span> as a server proxy for the <a href="http://www.astronomyapi.com/">Astronomy API</a>, <span class="code">Backbone.js</span> to organize the planetary data on the client-side, and <span class="code">D3.js</span> to render the visualization.
+				</p>
+				<a href="https://github.com/BenRKarl/Look_Up">View Source Code</a>
+			</div>
 
-		<div class="portfolio-element">
-			<h3>
-				<a href="http://coverage-reportr.herokuapp.com/">Coverage Reportr</a>
-			</h3>
-			<p>
-				Coverage Reportr is an application designed to make coverage reporting easier for the Public Relations industry. Historically compiling and organizing a coverage report required lots of time and lots of Excel, but now you can do your coverage reports quickly and easily with Coverage Reportr!
-			</p>
-			<div class="portfolio-image-container">
-				<img src="https://camo.githubusercontent.com/624e7a6ba64800380b21fd4d0e9db0ca05b335ca/687474703a2f2f692e696d6775722e636f6d2f4e414863784b452e706e67">
-				<p>After entering a URL, Coverage Reportr uses two APIs (<a href="http://www.alchemyapi.com/">AlchemyAPI</a> and <a href="http://nokogiri.org/">Nokogiri</a>) to parse the article for key metadata including the author's name, title, and - most importantly - the tone of the language.</p>
+			<div class="portfolio-element" id='coverage'>
+				<p>
+					<a href="http://coverage-reportr.herokuapp.com/">Coverage Reportr</a> solves a simple yet persistent problem all PR people face: coverage reporting. Typically compiling and organizing a coverage report requires lots of time in an Excel grid, but now you can create coverage reports quickly and easily!
+				</p>
+				<p>
+					The app is built on <span class="code">Rails</span> and has four associated models. To add a hit to a coverage report the user provides an article URL, which is then parsed with <a href="http://www.alchemyapi.com/">Alchemy API</a> and <a href="http://nokogiri.org/">Nokogiri</a> to extract the publication, title, author, date, and tone. Users can then share coverage reports with other users and export them to .csv format.
+				</p>
+				<a href="https://github.com/BenRKarl/coverage_reportr">View Source Code</a>
 			</div>
-			<div class="portfolio-image-container">
-				<img src="https://camo.githubusercontent.com/cc49070e64625860a87a7765e90029edbce9e426/687474703a2f2f692e696d6775722e636f6d2f4d5046564856372e706e67">
-				<p>You can see here the article has been entered to an online coverage report that you can share with other users and export into .csv.</p>
+
+			<div class="portfolio-element" id="job-board">
+				<p>
+					General Assembly has a big job board displayed in the lobby of their main office where students, alumni and friends can share notes about various job opportunities. <a href="http://wdi-job-board.herokuapp.com/">Job Board</a> takes the old analog board and puts it online with features that make it easier for people to connect.
+				</p>
+				<p>
+					The app uses <span class="code">OmniAuth</span> to let users log in with their LinkedIn account. The cards can be dragged and dropped anywhere on the board with the use of <a href="http://jqueryui.com/">jQuery UI</a> and we use <span class="code">Ajax</span> to save the position of the card to the database. If someone 'Likes' your card you'll recieve a notification in your profile.
+				</p>
+				<p>
+					Also of note is that Job Board is heavily tested. Using <span class="code">RSpec</span> we currently have about 88% test coverage on our models, routes and controllers.
+				</p>
+				<a href="https://github.com/mntj/JobBoard">View Source Code</a>
 			</div>
-			<a href="https://github.com/BenRKarl/coverage_reportr">View Source Code</a>
+
+			<div class="portfolio-element" id='proto'>
+				<p>
+					<a href="http://wdiproto2014.github.io/">WDI Proto</a> is the official site for my WDI class, Proto. General Assembly's Web Development Immersive (WDI) course is an intensive, full-time, three-month-long bootcamp where students learn all there is to know about web development. WDI Proto started in April and ended in July, 2014.
+				</p>
+				<p>
+					This app uses <span class="code">Backbone.js</span> to neatly organize information about each student into Backbone models. On the "Meet the Class" page you can see the collection view rendered as a thumbnail and each individual model view is rendered when you click on an image. Both views are rendered using <span class="code">Underscore.js</span>.
+				</p>
+				<a href="https://github.com/wdiproto2014/wdiproto2014.github.io">View Source Code</a>
+			</div>
+
 		</div>
-
-		<hr>
-
-		<div class="portfolio-element">
-		<h3>
-			<a href="http://wdi-job-board.herokuapp.com/">Job Board</a>
-		</h3>
-		<p>
-			At General Assembly there's a job board prominently displayed in the lobby of both of the main offices where students, alumni and friends can share notes about opportunities they are seeking or offering. It's very analog, so my team decided to put it online and give it a few additional features to help connect people more easily.
-		</p>
-		<div class="portfolio-image-container">
-			<img src="https://camo.githubusercontent.com/25e77d84800b2d5a05724a215f0a273c784b589b/687474703a2f2f692e696d6775722e636f6d2f366830476939502e706e67">
-			<p>Here's the main job board, styled to look exactly as it appears in real life. Users can create an account with their LinkedIn account or their email address. The cards can be dragged and dropped anywhere on the board with the use of <a href="http://jqueryui.com/">jQuery UI</a> and we use Ajax to save the position of the card to the database. If someone 'Likes' your card you'll recieve a notification in your profile.</p>
-			</div>
-			<a href="https://github.com/mntj/JobBoard">View Source Code</a>
-		</div> -->
 	</div>
 
+	<!-- CONTACT -->
 	<div class="contact content">
 		Email me: <a href="mailto:benkarl@me.com">BenKarl@me.com</a></br>
-		Call me: 719-660-0519</br>
 		<a href="https://github.com/BenRKarl"><i class="fa fa-github-square fa-2x"></i></a>
 		<a href="https://www.facebook.com/BenjaminKarl"><i class="fa fa-facebook-square fa-2x"></i></a>
 		<a href="https://twitter.com/benkarl"><i class="fa fa-twitter-square fa-2x"></i></a>

@@ -21,23 +21,41 @@ function getContentNode(node){
     'about': '.about-me',
     'resume': '.resume',
     'portfolio': '.portfolio',
-    'contact': '.contact'
+    'contact': '.contact',
+    'look-up': '#look-up',
+    'job-board': '#job-board',
+    'coverage': '#coverage',
+    'proto': '#proto'
   }
   var contentNode = $(contentLink[data]);
   return contentNode
 }
 
 function contentToggle(node){
+  var parent = node.parent();
   if ($(node).is(':visible')){
     $(node).slideToggle(500);
-  } else if ($('.contentblock').children().is(':visible')){
-    closeVisible($('.contentblock'));
+  } else if ($(parent).children().is(':visible')){
+    closeVisible(parent);
     setTimeout(function(){
       scrollToggle(node);
     }, 550);
   } else {
     scrollToggle(node)
   }
+}
+
+function changePortfolioHeader(node){
+  var data = $(node).attr('data');
+  var header = $('.portfolio-header');
+  var title = {
+    'look-up': 'Look Up!',
+    'job-board': 'Job Board',
+    'coverage': 'Coverage Reportr',
+    'proto': 'WDI Proto Class Page'
+  }
+  var newTitle = title[data]
+  $(header).html(newTitle);
 }
 
 $(function(){
@@ -48,12 +66,26 @@ $(function(){
 
   //hide content elements
   $('.content').hide()
+  $('.portfolio-element').hide()
 
   //listener for nav link click
   $('.navblock span').click(function(e){
     var content = getContentNode(this);
     contentToggle(content);
   });
+
+  $('.thumbnail').mouseover(function(e){
+    changePortfolioHeader(this);
+  })
+
+  $('.thumbnail').mouseout(function(e){
+    $('.portfolio-header').html('Click an Image for More Info.');
+  })
+
+  $('.thumbnail').click(function(e){
+    var info = getContentNode(this);
+    contentToggle(info);
+  })
 
   $('.main-image').draggable();
 });
