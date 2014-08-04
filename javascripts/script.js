@@ -75,10 +75,12 @@ $(function(){
   });
 
   $('.thumbnail').mouseover(function(e){
+    $(this).css('opacity', 0.5);
     changePortfolioHeader(this);
   })
 
   $('.thumbnail').mouseout(function(e){
+    $(this).css('opacity', 1);
     $('.portfolio-header').html('Click an Image for More Info.');
   })
 
