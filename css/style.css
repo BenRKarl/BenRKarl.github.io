@@ -110,6 +110,7 @@ a {
 }
 .thumbnail img {
   max-height: 230px;
+  box-shadow: 10px 10px 20px gray;
 }
 .job-board {
   margin-left: 70px;
