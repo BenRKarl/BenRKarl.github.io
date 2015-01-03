@@ -37,20 +37,21 @@ a {
   margin: 0 auto;
   margin-bottom: 40px;
   padding: 0;
-  width: 400px;
   text-align: center;
   border-radius: 15px;
   border: 2px solid gray;
+  display: inline-block;
 }
 .navblock span{
   display: inline-block;
   color: gray;
   font-size: 18px;
   margin: 10px;
+  position: relative;
+  transition: all 0.25s;
 }
 .navblock span:hover {
-  margin: 9px;
-  font-size: 19px;
+  color: #62B1F6;
   cursor: pointer;
 }
 .code {
@@ -97,6 +98,7 @@ a {
 /*Portfolio Section*/
 .portfolio {
   font-size: 22px;
+  max-width: 750px;
 }
 .portfolio-header {
   margin: 10px;
@@ -111,6 +113,10 @@ a {
 .thumbnail img {
   max-height: 230px;
   box-shadow: 10px 10px 20px gray;
+}
+.thumbnail img.satellite-img {
+  max-height: none;
+  width: 100%;
 }
 .job-board {
   margin-left: 70px;
@@ -132,10 +138,10 @@ a {
   color: #62B1F6;
   margin: 5px;
   text-decoration: none;
+  transition: all 0.25s;
 }
 .contact a:hover {
-  font-size: 19px;
-  margin-top: 4px;
+  color: #FB861A;
 }
 
 #footer {

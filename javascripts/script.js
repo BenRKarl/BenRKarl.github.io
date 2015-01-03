@@ -25,7 +25,8 @@ function getContentNode(node){
     'look-up': '#look-up',
     'job-board': '#job-board',
     'coverage': '#coverage',
-    'proto': '#proto'
+    'proto': '#proto',
+    'satellite': '#satellite'
   }
   var contentNode = $(contentLink[data]);
   return contentNode
@@ -52,7 +53,8 @@ function changePortfolioHeader(node){
     'look-up': 'Look Up!',
     'job-board': 'Job Board',
     'coverage': 'Coverage Reportr',
-    'proto': 'WDI Proto Class Page'
+    'proto': 'WDI Proto Class Page',
+    'satellite': 'The Satellite'
   }
   var newTitle = title[data]
   $(header).html(newTitle);
