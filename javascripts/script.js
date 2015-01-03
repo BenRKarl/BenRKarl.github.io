@@ -46,25 +46,26 @@ function contentToggle(node){
   }
 }
 
-function changePortfolioHeader(node){
-  var data = $(node).attr('data');
-  var header = $('.portfolio-header');
-  var title = {
-    'look-up': 'Look Up!',
-    'job-board': 'Job Board',
-    'coverage': 'Coverage Reportr',
-    'proto': 'WDI Proto Class Page',
-    'satellite': 'The Satellite'
+function toggleThumbnail(node, event){
+  var image     = node.parentElement.children[0];
+  var titleElem = node.parentElement.children[1];
+  var imgOpacity, titleOpacity;
+  if (event === 'mouseover'){
+    imgOpacity   = 0.5;
+    titleOpacity = 1;
+  } else {
+    imgOpacity   = 1;
+    titleOpacity = 0;
   }
-  var newTitle = title[data]
-  $(header).html(newTitle);
-}
+  $(image).css('opacity', imgOpacity);
+  $(titleElem).css('opacity', titleOpacity);
+};
 
 $(function(){
   //Initial fade-in elements
   $('.main-image').css({'opacity':0}).animate({'opacity':1}, 1000);
-  $('.main-title').css({'opacity':0}).animate({'opacity':1}, 3000);
-  $('.navblock').css({'opacity':0}).animate({'opacity':1}, 5000);
+  $('.main-title').css({'opacity':0}).animate({'opacity':1}, 2000);
+  $('.navblock').css({'opacity':0}).animate({'opacity':1}, 2000);
 
   //hide content elements
   $('.content').hide()
@@ -76,15 +77,14 @@ $(function(){
     contentToggle(content);
   });
 
-  $('.thumbnail').mouseover(function(e){
-    $(this).css('opacity', 0.5);
-    changePortfolioHeader(this);
-  })
 
-  $('.thumbnail').mouseout(function(e){
-    $(this).css('opacity', 1);
-    $('.portfolio-header').html('Click an Image for More Info.');
-  })
+  $('.mask').on('mouseover', function(){
+    toggleThumbnail(this, event.type);
+  });
+
+  $('.mask').on('mouseleave', function(){
+    toggleThumbnail(this, event.type);
+  });
 
   $('.thumbnail').click(function(e){
     var info = getContentNode(this);
