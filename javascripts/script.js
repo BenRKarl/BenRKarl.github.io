@@ -51,7 +51,7 @@ function toggleThumbnail(node, event){
   var titleElem = node.parentElement.children[1];
   var imgOpacity, titleOpacity;
   if (event === 'mouseover'){
-    imgOpacity   = 0.5;
+    imgOpacity   = 0.25;
     titleOpacity = 1;
   } else {
     imgOpacity   = 1;

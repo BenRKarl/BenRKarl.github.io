@@ -128,10 +128,10 @@ a {
   top: 0;
 }
 .thumb-title p {
-  position: absolute;
-  font-size: 28px;
+  font-size: 32px;
   color: #62B1F6;
-  top: 45%;
+  margin-top: 100px;
+  text-shadow: 3px 3px 5px black;
 }
 .mask {
   position: absolute;
