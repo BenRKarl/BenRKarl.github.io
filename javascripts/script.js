@@ -1,4 +1,3 @@
-
 function closeVisible(node){
   var children = $(node).children()
   $.each(children, function(i, child){
@@ -11,7 +10,7 @@ function closeVisible(node){
 function scrollToggle(node){
   $(node).slideToggle(750);
   $('html, body').animate({
-    scrollTop: $('.contentblock').offset().top
+    scrollTop: $('.content-block').offset().top
   }, 750);
 }
 
@@ -19,7 +18,7 @@ function getContentNode(node){
   var data = $(node).attr('data')
   var contentLink = {
     'about': '.about-me',
-    'resume': '.resume',
+    'blog': '.blog',
     'portfolio': '.portfolio',
     'contact': '.contact',
     'look-up': '#look-up',
@@ -68,8 +67,10 @@ $(function(){
   $('.navblock').css({'opacity':0}).animate({'opacity':1}, 2000);
 
   //hide content elements
-  $('.content').hide()
-  $('.portfolio-element').hide()
+  if (window.location.pathname === '/') {
+    $('.content').hide();
+  }
+  $('.portfolio-element').hide();
 
   //listener for nav link click
   $('.navblock span').click(function(e){

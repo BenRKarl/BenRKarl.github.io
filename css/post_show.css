@@ -1,0 +1,33 @@
+.contentblock {
+  margin-top: 50px;
+}
+
+.post-header {
+  color: #62B1F6;
+}
+
+.post-header h1 {
+  font-size: 26px;
+  color: #62B1F6;
+}
+
+.home-button {
+  position: fixed;
+  top: 60px;
+  left: 50px;
+  width: 125px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px grey;
+  z-index: 2;
+}
+
+@media all and (max-width: 1180px) {
+  .home-button {
+    position: absolute;
+    left: 50%;
+    margin-left: -62.5px;
+  }
+  .contentblock {
+    margin-top: 150px;
+  }
+}

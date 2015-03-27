@@ -1,0 +1,87 @@
+<div class="portfolio content">
+  <div class="thumbnail-container">
+    <div class="portfolio-header">
+      Click an Image for More Info.
+    </div>
+    <div class="thumbnail look-up" data="look-up">
+      <img src="assets/look_up.gif">
+      <div class="thumb-title"><p>Look Up</p></div>
+      <div class="mask"></div>
+    </div>
+    <div class="thumbnail job-board" data="job-board">
+      <img src="assets/job_board.png">
+      <div class="thumb-title"><p>Job Board</p></div>
+      <div class="mask"></div>
+    </div></br>
+    <div class="thumbnail satellite" data="satellite">
+      <img class="satellite-img" src="assets/satellite.png">
+      <div class="thumb-title"><p>Satellite</p></div>
+      <div class="mask"></div>
+    </div></br>
+    <div class="thumbnail coverage" data="coverage">
+      <img src="assets/coverage_reporter.png">
+      <div class="thumb-title"><p>Coverage Reportr</p></div>
+      <div class="mask"></div>
+    </div>
+    <div class="thumbnail proto" data="proto">
+      <img src="assets/class_proto.png">
+      <div class="thumb-title"><p>WDI Proto</p></div>
+      <div class="mask"></div>
+    </div>
+  </div>
+
+  <div class="info-container">
+    <div class="portfolio-element" id="look-up">
+      <p>
+        <a href="http://afternoon-coast-5294.herokuapp.com/">Look Up!</a> shows you where the other planets in the solar system are relative to your geographical position. I pulls information from the browser and renders relative information about the planets so you can see which of the planets are currently visible to you.
+      </p>
+      <p>
+        This app uses <span class="code">Rails</span> as a server proxy for the <a href="http://www.astronomyapi.com/">Astronomy API</a>, <span class="code">Backbone.js</span> to organize the planetary data on the client-side, and <span class="code">D3.js</span> to render the visualization.
+      </p>
+      <a href="https://github.com/BenRKarl/Look_Up">View Source Code</a>
+    </div>
+
+    <div class="portfolio-element" id='coverage'>
+      <p>
+        <a href="http://coverage-reportr.herokuapp.com/">Coverage Reportr</a> solves a simple yet persistent problem all PR people face: coverage reporting. Typically compiling and organizing a coverage report requires lots of time in an Excel grid, but now you can create coverage reports quickly and easily!
+      </p>
+      <p>
+        The app is built on <span class="code">Rails</span> and has four associated models. To add a hit to a coverage report the user provides an article URL, which is then parsed with <a href="http://www.alchemyapi.com/">Alchemy API</a> and <a href="http://nokogiri.org/">Nokogiri</a> to extract the publication, title, author, date, and tone. Users can then share coverage reports with other users and export them to .csv format.
+      </p>
+      <a href="https://github.com/BenRKarl/coverage_reportr">View Source Code</a>
+    </div>
+
+    <div class="portfolio-element" id="job-board">
+      <p>
+        General Assembly has a big job board displayed in the lobby of their main office where students, alumni and friends can share notes about various job opportunities. <a href="http://wdi-job-board.herokuapp.com/">Job Board</a> takes the old analog board and puts it online with features that make it easier for people to connect.
+      </p>
+      <p>
+        The app uses <span class="code">OmniAuth</span> to let users log in with their LinkedIn account. The cards can be dragged and dropped anywhere on the board with the use of <a href="http://jqueryui.com/">jQuery UI</a> and we use <span class="code">Ajax</span> to save the position of the card to the database. If someone 'Likes' your card you'll recieve a notification in your profile.
+      </p>
+      <p>
+        Also of note is that Job Board is heavily tested. Using <span class="code">RSpec</span> we currently have <a href="https://s3.amazonaws.com/uploads.hipchat.com/39979/779941/4JSuPQcW4vnoWAt/Screen%20Shot%202014-08-03%20at%2010.12.13%20PM.png">over 70% test coverage</a> on our models, routes and controllers.
+      </p>
+      <a href="https://github.com/mntj/JobBoard">View Source Code</a>
+    </div>
+
+    <div class="portfolio-element" id='proto'>
+      <p>
+        <a href="http://wdiproto2014.github.io/">WDI Proto</a> is the official site for my WDI class, Proto. General Assembly's Web Development Immersive (WDI) course is an intensive, full-time, three-month-long bootcamp where students learn all there is to know about web development. WDI Proto started in April and ended in July, 2014.
+      </p>
+      <p>
+        This app uses <span class="code">Backbone.js</span> to neatly organize information about each student into Backbone models. On the "Meet the Class" page you can see the collection view rendered as a thumbnail and each individual model view is rendered when you click on an image. Both views are rendered using <span class="code">Underscore.js</span>.
+      </p>
+      <a href="https://github.com/wdiproto2014/wdiproto2014.github.io">View Source Code</a>
+    </div>
+
+     <div class="portfolio-element" id='satellite'>
+       <p>
+         <a href="http://thesatellite.org/">The Satellite</a> is an experiential, photo-realistic portrait of Earth generated entirely from real-time satellite data. The project was started by Gabriel Winer, Dana Karwas and Ivan Safrin. A colleague and I, inspired by our love of science, helped Gabe and Dana rebuild and host their own custom site.
+      </p>
+      <p>
+        The Satellite is fully responsive on all media devices and formats, utilizing programmatic style updates to adjust to screens of any width.
+      </p>
+      <a href="https://github.com/BenRKarl/Satellite">View Source Code</a>
+    </div>
+  </div>
+</div>

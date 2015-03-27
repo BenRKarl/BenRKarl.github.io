@@ -4,9 +4,9 @@ email: benkarl@me.com
 description: "Ben Karl's personal website."
 baseurl: ""
 url: "benrkarl.com"
-twitter_username: BenRKarl
+twitter_username: BenKarl
 github_username:  BenRKarl
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /blogs/:title

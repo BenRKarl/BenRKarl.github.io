@@ -80,18 +80,19 @@ a {
   margin: 0 auto;
 }
 
-/*Resume Section*/
-.resume.content {
+/*Blog Section*/
+.blog.content {
   text-align: left;
+  width: 50em;
+  margin: 0 40px;
 }
-.resume.content img {
-  width: 60em;
-  margin: 0 40px 40px 40px;
-  box-shadow: 10px 10px 50px black;
-}
-.resume-header {
-  margin-left: 40px;
+.blog-header {
+  margin: 0;
   font-size: 26px;
+}
+hr.post-delimiter {
+  display: block;
+  width: 75%;
 }
 
 
