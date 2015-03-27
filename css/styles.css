@@ -170,21 +170,18 @@ hr.post-delimiter {
   color: gray;
 }
 
-/*Styles for screens smaller than 700px width*/
-@media all and (max-width: 700px) {
-  .mainimage {
-  border-radius: 50%;
-  border: 2px solid white;
-  width: 100px;
+/*Styles for screens smaller than 815px width*/
+@media all and (max-width: 815px) {
+  .main-image {
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 200px;
   }
   .contentblock {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  text-align: left;
-  font-size: 18px;
-  color: white;
-  margin: 10px 10px 10px 0;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    font-size: 18px;
   }
   h1 {
     font-size: 22px;
@@ -196,5 +193,40 @@ hr.post-delimiter {
   p {
     font-size: 16px;
     line-height: 24px;
+  }
+  .navblock span {
+    margin: 10px 5px;
+    font-size: 20px;
+  }
+  .about-me.content, .blog.content, .portfolio.content {
+    width: auto;
+    margin: 0 5px;
+  }
+  .portfolio-header {
+    text-align: center;
+  }
+  .portfolio.content {
+    padding: 0;
+  }
+  .thumbnail {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .thumbnail img {
+    width: 80%;
+    max-height: none;
+  }
+  .thumbnail img.satellite-img {
+    width: 80%;
+  }
+  .info-container {
+    width: auto;
+  }
+  .thumb-title p {
+    margin-top: 35px;
+  }
+  .portfolio-element {
+    padding-bottom: 25px;
   }
 }

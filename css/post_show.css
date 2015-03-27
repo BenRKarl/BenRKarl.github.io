@@ -30,4 +30,7 @@
   .contentblock {
     margin-top: 150px;
   }
+  .blog.content {
+    width: auto;
+  }
 }
